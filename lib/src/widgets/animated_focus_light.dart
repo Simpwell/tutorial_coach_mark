@@ -337,7 +337,7 @@ class AnimatedPulseFocusLightState extends AnimatedFocusLightState {
                         _getPaddingFocus() * 2,
                     child: InkWell(
                       borderRadius: _betBorderRadiusTarget(),
-                      onTap: _targetFocus.enableTargetTab
+                      onLongPress: _targetFocus.enableTargetTab
                           ? () => _tapHandler(targetTap: true)
                           : null,
                       child: Container(
